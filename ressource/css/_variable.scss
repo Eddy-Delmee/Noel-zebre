@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+}
+
+section.section1 p {
+  color: white;
+}
+
+h2 {
+  color: rgb(173, 40, 23);
+}
+
+header nav div a {
+  color: rgb(173, 40, 23) !important;
+}
+
+h1,
+h2,
+nav,
+section.section1 div p,
+section.section7 a {
+  font-family: 'Pacifico', cursive;
+}
+
+section.section7 a {
+  color: rgb(232, 196, 108, 1);
+}
+
+section.section7 a:hover {
+  color: rgb(173, 40, 23);
+}
+
+a {
+  text-decoration: none;
+}
+
+p,
+footer,
+h3,
+h4 {
+  font-family: 'Kodchasan', sans-serif;
+}
+
+h2 {
+  font-size: 3em;
+  font-weight: 800;
+}
+
+h3 {
+  font-size: 2em;
+  font-weight: 800;
+}
+
+h4 {
+  font-size: 1.55em;
+  font-weight: 800;
+}
+
+p {
+  font-size: 1.2em;
+  font-weight: 500;
+}

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- logo -->
+    <link rel="icon" type="image/x-icon" href="ressource/image/Logo.png">
+
+    <!-- font-family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kodchasan:wght@500&display=swap" rel="stylesheet">
+
+    <!-- Boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <!-- icon -->
+    <script src="https://kit.fontawesome.com/564a2c56dc.js" crossorigin="anonymous"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="ressource/css/style.css">
+
+    <!-- Titre -->
+    <title>ARINFO</title>
+
+    <!-- js -->
+    <script>
+        var deadline = new Date("Dec 25, 2022 00:00:00").getTime();
+        var x = setInterval(function () {
+            var now = new Date().getTime();
+            var t = deadline - now;
+            var days = Math.floor(t / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((t % (1000 * 60)) / 1000);
+            document.getElementById("noël").innerHTML = days;
+            if (t < 0) {
+                clearInterval(x);
+                document.getElementById("noël").innerHTML = "Joyeux Noël";
+            }
+        }, 1000);
+    </script>
+
+</head>
+
+
+<body>
+
+
+    <header>
+
+          <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <img src="ressource/image/Logo.png" alt="Logo" width="px" height="50px" class="d-inline-block align-text-top">
+              <a class="navbar-brand">Cher Père Noël ...</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll">
+                  <li class="nav-item text-center">
+                    <a class="nav-link active" aria-current="page" href="#">Ecrire au Père Noël</a>
+                  </li>
+                  <li class="nav-item text-center">
+                    <a class="nav-link active" aria-current="page" href="#">Appeler le Père Noël</a>
+                  </li>
+                  <li class="nav-item text-center">
+                    <a class="nav-link active" aria-current="page" href="#">Adresse du Père Noël</a>
+                  </li>
+              </div>
+            </div>
+          </nav>
+
+    </header>
+
+
+    <section class="section1">
+
+            <div class="dodo">
+
+                <p id="noël"></p>
+
+            </div>
+
+    </section>
+
+
+    <section class="section2"></section>
+
+
+    <section class="section3">
+
+        <h2>
+            Les News du Père Noël
+        </h2>
+
+        <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+            <div class="card espacement ombre" style="width: 17rem;">
+                <img src="ressource/image/poulet.jpg" height="199" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h4 class="card-title">La dinde de Noël</h4>
+                    <p class="card-text">Découvrez notre recette du plat préféré de tous pendant la période des fêtes.
+                    </p>
+                </div>
+            </div>
+            <div class="card espacement ombre" style="width: 17rem;">
+                <img src="ressource/image/sapin.jpg" height="199" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h4 class="card-title">Marché de Noël</h4>
+                    <p class="card-text">Vous êtes à la recherche d’une idée de sortie pour votre week-end ? Rendez-vous
+                        sur le marché de Noël !</p>
+                </div>
+            </div>
+            <div class="card espacement ombre" style="width: 17rem;">
+                <img src="ressource/image/ateliers_de_noel.jpg" height="199" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h4 class="card-title">Ateliers créatifs</h4>
+                    <p class="card-text">En compagnie d’animateurs, vos enfants pourront laissez libre cours à leur
+                        imagination.</p>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <section class="section4"></section>
+
+
+    <section class="section5">
+
+        <div class="liste1">
+
+            <div>
+                <img src="ressource/image/pinguin_recadre.gif" alt="pinguin">
+            </div>
+
+            <div class="pinguin">
+
+                <div class="liste11">
+                    <h3>
+                        La liste du Père Noël
+                    </h3>
+                </div>
+
+                <div>
+                    <audio controls preload="auto" src="ressource/image/La_liste_du_Pere_Noel.mp3"> Votre navigateur ne
+                        supporte pas la balise audio .
+                    </audio>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="section6"></section>
+
+
+    <section class="section7">
+
+        <h2 class="titre7">
+            Le concours du Père Noël
+        </h2>
+
+        <div class="concours1">
+
+            <div class="concours11">
+
+                <div class="concours111">
+
+                    <p>
+                        Si tu as entre 3 et 10 ans, envoie ton dessin "Mon plus beau Noël"<br>
+                        avant le 20 Décembre 2022.
+                    </p>
+
+                    <p>
+                        Un prix sera décerné par catégorie : 3/5 ans, 6/8 ans, 9/10 ans.
+                    </p>
+
+                </div>
+
+                <div class="concours112">
+                    <img src="ressource/image/bonhomme-de-neige.gif" class="bonhomme-de-neige" alt="bonhomme-de-neige">
+                </div>
+
+            </div>
+
+            <div class="centre7">
+
+                <p>
+                    Tu peux me l'envoyer par mail, Farfouille a un bel ordinateur.
+                </p>
+
+                <a href="#Téléchargement" id="Téléchargement" class="button1">Téléchargement</a>
+
+                <br>
+                <br>
+                <br>
+
+                <p>
+                    Ou par courrier, mon fidèle Rudolphe me l'apportera.
+                </p>
+
+                <a href="#Adresse" id="Adresse" class="button2">Adresse</a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer class="footer">
+
+        <img src="ressource/image/GUIRLANDE_DOREE.png" class="image" alt="Guirlande">
+
+        <div class="footer1">
+            <div class="footer11">
+                <h3>
+                    Adresse:
+                </h3>
+                <p>
+                    Père Noël<br>
+                    1 rue du Ciel étoilé<br>
+                    Pôle Nord
+                </p>
+            </div>
+            <div>
+                <img src="ressource/image/logo_footer.png" height="130 px" alt="Logo">
+            </div>
+            <div class="footer12">
+                <h3>
+                    Suivez le père Noël:
+                </h3>
+                <div>
+                    <img src="ressource/image/logo_facebook.png" height="50 px" alt="logo facebook">
+                    <img src="ressource/image/logo_instagram.png" height="50 px" alt="logo instagram">
+                    <img src="ressource/image/logo_youtube.png" height="50 px" alt="logo youtube">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="footer2">
+            <h5><a href="#Mentions légales" id="Mentions légales">Mentions légales</a></h5>
+            <h5><a href="#© 2022" id="© 2022">© 2022</a></h5>
+            <h5><a href="#Contacts" id="Contacts">Contacts</a></h5>
+        </div>
+
+    </footer>
+
+    <!-- Boostrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
